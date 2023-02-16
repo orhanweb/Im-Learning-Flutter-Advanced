@@ -15,6 +15,7 @@ class BeginingAdvacedFlutter extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(useMaterial3: true),
       title: "Flutter Advance",
+      debugShowCheckedModeBanner: false,
       home: const NetworkChangeExampleView(),
       builder: MainBuild.mainBuild,
     );

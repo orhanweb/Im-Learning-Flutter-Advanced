@@ -12,6 +12,7 @@ class NoNetworkWidget extends StatefulWidget {
 
 class _NoNetworkWidgetState extends State<NoNetworkWidget>
     with NetworkStateMixin {
+  final String _noNetworkText = "İnternete bağlı değilsiniz";
   late final INetworkChangeManager _networkChangeManager;
   NetworkStation? _networkStation;
   @override
@@ -47,7 +48,12 @@ class _NoNetworkWidgetState extends State<NoNetworkWidget>
           : CrossFadeState.showSecond,
       firstChild: Container(
         height: 30,
-        color: Colors.greenAccent,
+        color: Colors.grey,
+        child: Center(
+            child: Text(
+          _noNetworkText,
+          style: context.textTheme.bodyMedium,
+        )),
       ),
       secondChild: const SizedBox.shrink(),
     );
