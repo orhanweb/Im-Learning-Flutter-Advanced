@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:im_learning_flutter_advanced/Modular_Field_Learn/modular_view.dart';
 import 'package:im_learning_flutter_advanced/Network_Change_Learn/Core/main_build.dart';
-
-import 'Network_Change_Learn/Use_Case/network_change_example.dart';
 
 void main() {
   runApp(const BeginingAdvacedFlutter());
@@ -16,7 +15,7 @@ class BeginingAdvacedFlutter extends StatelessWidget {
       theme: ThemeData.dark(useMaterial3: true),
       title: "Flutter Advance",
       debugShowCheckedModeBanner: false,
-      home: const NetworkChangeExampleView(),
+      home: const ModularView(),
       builder: MainBuild.mainBuild,
     );
   }
