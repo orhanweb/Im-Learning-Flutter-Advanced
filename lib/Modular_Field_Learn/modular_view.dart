@@ -22,7 +22,7 @@ class _ModularViewState extends State<ModularView> {
             child: Text('ModularLearn'),
           ),
           CustomGradientButton(onPressed: () {}, buttonText: "My First"),
-          CustomNetworkImage(url: "")
+          const CustomNetworkImage(url: "")
         ],
       ),
     );
