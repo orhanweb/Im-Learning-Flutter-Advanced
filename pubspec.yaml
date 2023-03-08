@@ -13,8 +13,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  connectivity_plus: ^3.0.3
+
   kartal: ^2.8.0
+  vexana: ^3.4.0
   uikit:
     path: module/uikit
 
